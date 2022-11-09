@@ -5,18 +5,29 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const goods = {
-  name: "Sneakers",
+const Sneakers = {
+  name: "Asics",
   description: "for playing volleyball",
   price: "68$",
+  quantity: 2,
 }
 
+const Shoes = {
+  name: "Kenneth",
+  description: "classic leather shoes",
+  price: "48$",
+  quantity: 0,
+}
+
+
+
 function Goods(props) {
+
   return(
     <article>
-      <h1>{goods.name}</h1>
-      <p>{goods.description}</p>
-      <p>{goods.price}</p>
+      <h1>{Sneakers.name}</h1>
+      <p>{Sneakers.description}</p>
+      <p>{Sneakers.price}</p>
     </article>
   )
 }
