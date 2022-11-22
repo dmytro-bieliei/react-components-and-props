@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Sneakers extends Component {
+class Goods extends Component {
   render() {
     const { type, name, description, price, quantity } = this.props;
     return (

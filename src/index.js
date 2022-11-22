@@ -38,7 +38,19 @@ function Goods(props) {
 // root.render(React.createElement(Goods))
 root.render(
   <div>
-    <Goods type={sneakers.type} />
-    <Goods obj={shoes} />
+    <Goods
+      type={sneakers.type}
+      name={sneakers.name}
+      description={sneakers.description}
+      price={sneakers.price}
+      quantity={sneakers.quantity}
+    />
+    <Goods
+      type={shoes.type}
+      name={shoes.name}
+      description={shoes.description}
+      price={shoes.price}
+      quantity={shoes.quantity}
+    />
   </div>
 );
