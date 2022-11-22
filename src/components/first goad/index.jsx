@@ -1,8 +1,10 @@
 import { Component } from "react";
 
-class Goods extends Component {
+class ClassGoods extends Component {
   render() {
-    const { type, name, description, price, quantity } = this.props;
+    const {
+      product: { type, name, description, price, quantity },
+    } = this.props;
     return (
       <article>
         <h1>{type}</h1>
@@ -14,4 +16,4 @@ class Goods extends Component {
     );
   }
 }
-export default Sneakers;
+export default ClassGoods;

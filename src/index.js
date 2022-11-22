@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -22,7 +21,9 @@ const shoes = {
 };
 
 function Goods(props) {
-  const { type, name, description, price, quantity } = props;
+  const {
+    product: { type, name, description, price, quantity },
+  } = props;
 
   return (
     <article>
@@ -38,19 +39,7 @@ function Goods(props) {
 // root.render(React.createElement(Goods))
 root.render(
   <div>
-    <Goods
-      type={sneakers.type}
-      name={sneakers.name}
-      description={sneakers.description}
-      price={sneakers.price}
-      quantity={sneakers.quantity}
-    />
-    <Goods
-      type={shoes.type}
-      name={shoes.name}
-      description={shoes.description}
-      price={shoes.price}
-      quantity={shoes.quantity}
-    />
+    <Goods product={sneakers} />
+    <Goods product={shoes} />
   </div>
 );
