@@ -1,5 +1,6 @@
 import "./App.css";
-import ClassGoods from "./components/first goad";
+import ClassGoods from "./components/ClassGoods";
+import Goods from "./components/FunctionalComponent";
 
 // class App extends React.Component {
 const sneakers = {
@@ -26,6 +27,12 @@ function App() {
       </article>
       <article>
         <ClassGoods product={shoes} />
+      </article>
+      <article>
+        <Goods product={sneakers} />
+      </article>
+      <article>
+        <Goods product={shoes} />
       </article>
     </div>
   );
