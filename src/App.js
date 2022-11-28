@@ -1,5 +1,5 @@
 import "./App.css";
-import ClassGoods from "./components/ClassGoods";
+import ClassGoods from "./components/ClassComponent";
 import Goods from "./components/FunctionalComponent";
 
 // class App extends React.Component {
