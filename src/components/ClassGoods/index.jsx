@@ -8,11 +8,11 @@ class ClassGoods extends Component {
     } = this.props;
     return (
       <article>
-        <h1>{type}</h1>
-        <p>Brand: {name}</p>
-        <p>Purpose: {description}</p>
-        <p>Price: {price}</p>
-        <p>In stock: {quantity}</p>
+        <h1>{type||"type not cpecified"}</h1>
+        <p>Brand: {name||"no brand information"}</p>
+        <p>Purpose: {description||"no good description"}</p>
+        <p>Price: {price||"no price information"}</p>
+        <p>In stock: {quantity||"not available"}</p>
       </article>
     );
   }

@@ -8,7 +8,7 @@ const sneakers = {
   name: "Asics",
   description: "for playing volleyball",
   price: "68$",
-  quantity: 2,
+  quantity: 6,
 };
 
 const shoes = {

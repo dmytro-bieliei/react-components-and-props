@@ -1,18 +1,3 @@
-const sneakers = {
-  type: "Athletic shoes",
-  name: "Asics",
-  description: "for playing volleyball",
-  price: "68$",
-  quantity: 2,
-};
-
-const shoes = {
-  type: "Classic shoes",
-  name: "Kenneth",
-  description: "classic leather shoes",
-  price: "48$",
-  quantity: 0,
-};
 
 function Goods(props) {
   const {
@@ -21,11 +6,11 @@ function Goods(props) {
 
   return (
     <article>
-      <h1>{type}</h1>
-      <p>Brand: {name}</p>
-      <p>Purpose: {description}</p>
-      <p>Price: {price}</p>
-      <p>In stock: {quantity}</p>
+      <h1>{type||"type not cpecified"}</h1>
+      <p>Brand: {name||"no brand information"}</p>
+      <p>Purpose: {description||"no good description"}</p>
+      <p>Price: {price||"no price information"}</p>
+      <p>In stock: {quantity||"not available"}</p>
     </article>
   );
 }
